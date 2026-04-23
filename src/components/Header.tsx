@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-primary/80 backdrop-blur-xl shadow-[0_32px_64px_-15px_rgba(0,0,0,0.06)] border-b border-outline-variant/10">
-      <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1920px] mx-auto">
+      <div className="flex justify-between items-center px-6 md:px-12 py-6 max-w-480 mx-auto">
         
         {/* Brand Logo */}
         <Link href="/" className="font-headline text-2xl font-bold text-primary dark:text-white tracking-tighter">

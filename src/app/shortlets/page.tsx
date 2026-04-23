@@ -7,17 +7,17 @@ export default function ShortletsPage() {
     <div className="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-tertiary-container selection:text-on-tertiary-container">
       <Header />
 
-      <main className="flex-grow pt-20">
+      <main className="grow pt-20">
         
         {/* Hero Section */}
-        <section className="relative h-[700px] md:h-[921px] flex items-center justify-center overflow-hidden">
+        <section className="relative h-175 md:h-230.5 flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               alt="Luxury Villa" 
               className="w-full h-full object-cover brightness-75 scale-105" 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfOvFOhsSdqwI_Htzn5pOcfUwshRLaFw7wzJ9zqpYRTvjs_UrFPjjiwU3LpQ9CH4P33wiG3ZGn2Fm_D0gHwomCFFc4rgi6JC9_akpzjxtBWakyIvWCEro0H5N1hCUjzwhY5escme15g8sKRY3ShCBgWC3WiPX1iGM49efP4Sn9cF0u-SsrifaiMFDE8moebIYARkUSWkSuo93meqOg6bkL3VksvXU8jIHNUvS0COBxoTq9_feOCSZkAxXyOyeMhHIlh04I4kl5vsqW" 
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-transparent to-primary/60"></div>
+            <div className="absolute inset-0 bg-linear-to-b from-primary/40 via-transparent to-primary/60"></div>
           </div>
           <div className="relative z-10 w-full max-w-6xl px-6 flex flex-col items-center text-center mt-12">
             <h1 className="text-5xl md:text-6xl lg:text-8xl text-white font-bold mb-8 tracking-tighter leading-tight font-headline">
@@ -61,7 +61,7 @@ export default function ShortletsPage() {
 
         {/* Featured Collections */}
         <section className="py-24 px-6 md:px-12 bg-surface">
-          <div className="max-w-[1920px] mx-auto">
+          <div className="max-w-480 mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-4 font-headline">Curated Collections</h2>
@@ -79,13 +79,13 @@ export default function ShortletsPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Collection 1 */}
-              <Link href="/shortlets/business" className="group relative aspect-[4/5] overflow-hidden rounded-xl block">
+              <Link href="/shortlets/business" className="group relative aspect-4/5 overflow-hidden rounded-xl block">
                 <img 
                   alt="Business Suites" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV9LzfB-X4DRriMoRpHGTBREt5b3oVKZJwd-a0d9Ag3FEptmW83RxaPragFHcDx9nt6mbOln8qCybf4oHqoplxg1Whty2F998YEcpbIuVegubaY8n2nS7uhDXHPMN-FRes5jkezTXUZrhE0AnWDMNII-RvZybWhaM2FFzXwHuc5fFTGHVvC-tylS85ufnLSYQEEXw28WrfCwZKAdoFwtYY6Ris35eOe_AHREUZuEVGfKF2QZbGs0JmM5zJj91KxLttw-T0Pv85AzVg" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 w-full">
                   <h3 className="text-2xl text-white font-bold mb-2 font-headline">Business Suites</h3>
                   <p className="text-white/70 text-xs tracking-[0.2em] uppercase font-bold font-label">Precision & Comfort</p>
@@ -93,13 +93,13 @@ export default function ShortletsPage() {
               </Link>
               
               {/* Collection 2 */}
-              <Link href="/shortlets/penthouses" className="group relative aspect-[4/5] overflow-hidden rounded-xl block">
+              <Link href="/shortlets/penthouses" className="group relative aspect-4/5 overflow-hidden rounded-xl block">
                 <img 
                   alt="Lagos Penthouses" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuArJCIiFjFBapKgb5-C_KCQ2OrzAgaULGsaH_UmvS8TQxqbzhOKytXOGfVrwXpATMCn2Sd7bVbq6HFQpEqdoUYYcoMC3AoHzn0ygGRNk54RZTKasjPAQrYFs_XiOogMEwQVaYtvBU0-cDO_TOnnfpvFeOM9WV7yfwLLbJ8wN75P-TYb8mkqZEMIh2xqLDg3xTCTis2WVS0NohlSXoGoa_4I-_5K5U55dSXSZYIqbuewW5rxu48JBwdDqQ-V9jZJdLa2tpL9b_4n-SR0" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 w-full">
                   <h3 className="text-2xl text-white font-bold mb-2 font-headline">Lagos Penthouses</h3>
                   <p className="text-white/70 text-xs tracking-[0.2em] uppercase font-bold font-label">Skyline Serenity</p>
@@ -107,13 +107,13 @@ export default function ShortletsPage() {
               </Link>
               
               {/* Collection 3 */}
-              <Link href="/shortlets/getaways" className="group relative aspect-[4/5] overflow-hidden rounded-xl block">
+              <Link href="/shortlets/getaways" className="group relative aspect-4/5 overflow-hidden rounded-xl block">
                 <img 
                   alt="Weekend Getaways" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuD381ktn0SSq9Wb6CrgTh-p4cx0UXQyXfyscjB4Yr-L065WxiBsUYiqVhGd39s3AaCPBigOZym5r94KVJ9hQBNUJ8YjAVOMqE9qAi63BV0EDGkAZ0bbWtHTaSa_Uxr_btFyi9Blaxj0nnLQ5-lx1ze_SGIPN2jEbkSzydnfZYPmiq8kj6uq4VUpyHNwLo97yJGBAT1eInvYwIMWVCrhTeJRW25h7PkNpm4gBaYds-MVBg6Ax_gw0PdlRnC6gjzEHQH8p5o9KWo9RED2" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 w-full">
                   <h3 className="text-2xl text-white font-bold mb-2 font-headline">Weekend Getaways</h3>
                   <p className="text-white/70 text-xs tracking-[0.2em] uppercase font-bold font-label">Private Sanctuaries</p>
@@ -125,7 +125,7 @@ export default function ShortletsPage() {
 
         {/* Listings Grid */}
         <section className="py-24 px-6 md:px-12 bg-surface-container-low">
-          <div className="max-w-[1920px] mx-auto">
+          <div className="max-w-480 mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-6 font-headline">Available Estates</h2>
               <div className="w-24 h-1 bg-tertiary-container mx-auto"></div>
@@ -140,7 +140,7 @@ export default function ShortletsPage() {
                     <span className="material-symbols-outlined text-tertiary-container text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                     <span className="text-xs font-bold text-primary font-body">4.9</span>
                   </div>
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-4/3 overflow-hidden">
                     <img 
                       alt="Banana Island Estate" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -175,7 +175,7 @@ export default function ShortletsPage() {
                     <span className="material-symbols-outlined text-tertiary-container text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                     <span className="text-xs font-bold text-primary font-body">4.8</span>
                   </div>
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-4/3 overflow-hidden">
                     <img 
                       alt="Ikoyi Penthouse" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -210,7 +210,7 @@ export default function ShortletsPage() {
                     <span className="material-symbols-outlined text-tertiary-container text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                     <span className="text-xs font-bold text-primary font-body">5.0</span>
                   </div>
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-4/3 overflow-hidden">
                     <img 
                       alt="Maitama Manor" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
@@ -253,7 +253,7 @@ export default function ShortletsPage() {
             <span className="material-symbols-outlined text-[40rem] text-white select-none -mr-32" style={{ fontVariationSettings: "'FILL' 1" }}>verified_user</span>
           </div>
           
-          <div className="max-w-[1920px] mx-auto relative z-10">
+          <div className="max-w-480 mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 leading-tight font-headline">
@@ -292,7 +292,7 @@ export default function ShortletsPage() {
               </div>
               
               <div className="relative mt-12 lg:mt-0 px-4 md:px-0">
-                <div className="aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative">
+                <div className="aspect-square md:aspect-4/3 rounded-2xl overflow-hidden shadow-2xl relative">
                   <img 
                     alt="Concierge Standard" 
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" 
@@ -310,7 +310,7 @@ export default function ShortletsPage() {
 
         {/* Host CTA */}
         <section className="py-24 px-6 md:px-12 bg-surface">
-          <div className="max-w-[1920px] mx-auto rounded-[2.5rem] bg-surface-container-low overflow-hidden flex flex-col lg:flex-row shadow-sm">
+          <div className="max-w-480 mx-auto rounded-[2.5rem] bg-surface-container-low overflow-hidden flex flex-col lg:flex-row shadow-sm">
             <div className="lg:w-1/2 aspect-square lg:aspect-auto relative">
               <img 
                 alt="Property Owner" 

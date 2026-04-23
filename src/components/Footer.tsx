@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="w-full mt-20 bg-primary-container text-white border-t border-outline/10">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-6 md:px-12 py-20 w-full max-w-[1920px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-6 md:px-12 py-20 w-full max-w-480 mx-auto">
         
         {/* Brand & Mission */}
         <div className="space-y-6">
@@ -61,7 +61,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="px-6 md:px-12 py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-500 font-body text-xs tracking-widest uppercase max-w-[1920px] mx-auto gap-4">
+      <div className="px-6 md:px-12 py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-gray-500 font-body text-xs tracking-widest uppercase max-w-480 mx-auto gap-4">
         <div>© 2026 The Curated Estate. The Digital Curator.</div>
         <div className="flex gap-6">
           <Link href="#" className="hover:text-white transition-colors">WhatsApp</Link>

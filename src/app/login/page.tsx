@@ -103,11 +103,46 @@ export default function LoginPage() {
           {/* Social Actions */}
           <div className="grid grid-cols-2 gap-4">
             <button type="button" className="flex items-center justify-center px-4 py-4 bg-surface-container-lowest border border-outline-variant/30 rounded-lg hover:bg-surface-container-low transition-colors active:scale-95 shadow-sm">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDamOib4BSCGTvobgmUSkU7LeonWCMm0S7kIlR3o9EY85Q22s4USqyQGHtehMm0YdU0GcOf_crU-DOKBcDxYhD8P72acPCfY_f5RF_ewKRx4Axd6gVwgzzx_H07B8xU6M7ksu--aRfZdrtZOSVlMNcaa52HY6_oGK_X8hLOl1kFad5o3DaJhYnJCyhzgE8PQSuzPjfFNku0n6768CfFJgTmTI2tmg5kXvN5gkgX4kgK39VZK1t5BPWhnFBUyy4XkAVLvk3oCRFaXR3p" alt="Google" className="w-5 h-5 mr-3" />
+              {/* Google "G" (inline SVG to avoid broken external image URLs) */}
+              <svg
+                className="w-5 h-5 mr-3"
+                viewBox="0 0 48 48"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  fill="#FFC107"
+                  d="M43.611 20.083H42V20H24v8h9.792c-1.678 4.657-6.12 8-11.792 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.962 3.037l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.649-.389-3.917z"
+                />
+                <path
+                  fill="#FF3D00"
+                  d="M6.306 14.691l6.571 4.819C14.655 16.108 19.02 14 24 14c3.059 0 5.842 1.154 7.962 3.037l5.657-5.657C34.046 6.053 29.268 4 24 4c-7.514 0-14.131 3.69-17.694 10.691z"
+                />
+                <path
+                  fill="#4CAF50"
+                  d="M24 44c5.166 0 9.86-1.958 13.412-5.186l-6.194-4.823C29.898 36.28 27.103 37 24 37c-4.98 0-9.345-2.108-11.123-5.51l-6.52 5.007C9.861 40.77 16.477 44 24 44z"
+                />
+                <path
+                  fill="#1976D2"
+                  d="M43.611 20.083H42V20H24v8h9.792c-0.759 2.109-2.195 3.935-4.035 5.124l6.194 4.823C38.41 35.141 44 30.11 44 24c0-1.341-.138-2.649-.389-3.917z"
+                />
+              </svg>
               <span className="text-sm font-bold text-primary font-body">Google</span>
             </button>
+
             <button type="button" className="flex items-center justify-center px-4 py-4 bg-surface-container-lowest border border-outline-variant/30 rounded-lg hover:bg-surface-container-low transition-colors active:scale-95 shadow-sm">
-              <span className="material-symbols-outlined text-primary mr-3" style={{ fontVariationSettings: "'FILL' 1" }}>apple</span>
+              {/* Apple logo (inline SVG) */}
+              <svg
+                className="w-5 h-5 mr-3"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.365 1.43c0.02 1.14-0.44 2.23-1.22 3.03c-0.78 0.81-1.99 1.43-3.09 1.34c-0.12-1.08 0.4-2.21 1.17-3.01c0.77-0.8 2-1.37 3.14-1.36zM20.56 17.07c-0.28 0.66-0.4 0.91-0.74 1.42c-0.63 0.96-1.36 1.93-2.34 2.61c-0.96 0.67-1.94 0.74-3.04 0.3c-0.78-0.3-1.57-0.3-2.34 0c-1.08 0.42-2.05 0.38-3.02-0.29c-1.01-0.71-1.79-1.73-2.43-2.78c-1.65-2.71-2.25-6.12-0.89-8.98c0.63-1.36 1.68-2.42 3.04-2.81c0.87-0.25 1.86-0.1 2.66 0.29c0.73 0.34 1.32 0.34 2.05 0.02c0.75-0.32 1.63-0.44 2.46-0.26c1.28 0.27 2.24 1.07 2.88 2.2c-0.02 0.03-1.34 0.79-1.33 2.42c0.01 1.98 1.77 2.72 1.78 2.72c-0.03 0.09-0.08 0.22-0.11 0.29c-0.05 0.12-0.09 0.23-0.14 0.35z"
+                />
+              </svg>
               <span className="text-sm font-bold text-primary font-body">Apple</span>
             </button>
           </div>
